@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Otávio Augusto <tavinteixeira@hotmail.com>"]
 edition = "2021"
 build = "build.rs"
+description = "Um aplicativo para calcular a porcentagem de imposto e lucro sobre preços a taxas fixas usando Rust e slint"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,3 +13,7 @@ slint = "1.4"
 
 [build-dependencies]
 slint-build = "1.4"
+
+[package.metadata.bundle]
+name = "CalculadoraDeGanhos"
+identifier = "io.github.T4vexx.CalculadoraDeGanhos"

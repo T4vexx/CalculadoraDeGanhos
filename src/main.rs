@@ -8,7 +8,7 @@ const OPEXPER: f64 = 0.10;
 fn main() -> Result<(), slint::PlatformError> {
     let ui: AppWindow = AppWindow::new()?;
     let ui_handle = ui.as_weak();
-
+    
     ui.on_divide_income(move |string| {
         let ui: AppWindow = ui_handle.unwrap();
         let num: f64 = string.trim().parse().unwrap();

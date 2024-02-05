@@ -5,7 +5,8 @@ export component AppWindow inherits Window {
     in-out property <bool> open_curtain;
     callback divide-income(string);
     animate background { duration: 800ms; }
-
+    title: "Calculadora de ganhos";
+    icon: @image-url("./calculadora.png");
     background: #313e50;
     GridLayout {
         padding: 50px;
